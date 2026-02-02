@@ -3,32 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Image Table Layout</title>
+
   <style>
-	  body{
-		  width: 1100px;
-	  }
-    .imageContainer img {
-      width: 100%;
-      max-width: 400px;
-      display: block;
-      margin: 20px auto;
+    body {
+      margin: 0 auto;
+      width: 1100px;
+      font-family: Arial, sans-serif;
     }
 
+    /* Image container */
+    .imageContainer {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .imageContainer img {
+      width: 120px;
+      margin: 0 10px;
+    }
+
+    /* Table styling */
     table {
       width: 1000px;
-      border-collapse: collapse;
       margin: 20px auto;
+      border-collapse: collapse;
     }
 
-    td, th {
-      border: 1px solid #000;
+    th, td {
+      border: 1px solid black;
       padding: 10px;
       text-align: center;
     }
 
     .img-cell img {
-      width: 200px;
-      max-width: 180px;
+      width: 180px;
     }
 
     .text-cell {
@@ -36,11 +44,14 @@
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Image Container -->
+  <!-- Image Container (3 images required) -->
   <div class="imageContainer">
-    <img src="https://as2.ftcdn.net/v2/jpg/05/69/03/25/1000_F_569032536_R4bxO0QomNqFTQvHK4nXzWv7t4hltkTI.jpg" alt="Sample Image">
+    <img src="https://via.placeholder.com/120" alt="Image A">
+    <img src="https://via.placeholder.com/120" alt="Image B">
+    <img src="https://via.placeholder.com/120" alt="Image C">
   </div>
 
   <!-- Table Structure -->
@@ -50,26 +61,28 @@
       <th width="600">Text Content</th>
       <th width="200">Image</th>
     </tr>
+
     <tr>
-      <td class="img-cell">
-        <img src="https://media.gq.com/photos/5b6b20e3a3a1320b7280f029/master/pass/The-Brutal-Wonders-Of-The-Architecture-World-GQ-Style-Fall-2018_07.jpg" alt="Image 1">
+      <td class="img-cell" width="200">
+        <img src="https://via.placeholder.com/180" alt="Row1 Image1">
       </td>
       <td class="text-cell">
-        This is some text content for row 1.
+        This is the text content for row one.
       </td>
-      <td class="img-cell">
-        <img src="https://thumbs.dreamstime.com/z/designer-architecure-homes-823379.jpg" alt="Image 2">
+      <td class="img-cell" width="200">
+        <img src="https://via.placeholder.com/180" alt="Row1 Image2">
       </td>
     </tr>
+
     <tr>
-      <td class="img-cell">
-        <img src="https://thumbs.dreamstime.com/z/designer-architecure-homes-823379.jpg" alt="Image 3">
+      <td class="img-cell" width="200">
+        <img src="https://via.placeholder.com/180" alt="Row2 Image1">
       </td>
       <td class="text-cell">
-        This is some text content for row 2.
+        This is the text content for row two.
       </td>
-      <td class="img-cell">
-        <img src="https://thumbs.dreamstime.com/z/designer-architecure-homes-823379.jpg" alt="Image 4">
+      <td class="img-cell" width="200">
+        <img src="https://via.placeholder.com/180" alt="Row2 Image2">
       </td>
     </tr>
   </table>
